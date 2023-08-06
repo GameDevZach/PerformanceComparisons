@@ -142,6 +142,16 @@ public class ComparisonController : MonoBehaviour
         instanceQuantity = Mathf.RoundToInt(Mathf.Max(1, int.Parse(quantStr)));
     }
 
+    public void UpdateRows(string rowStr)
+    {
+        rows = Mathf.RoundToInt(Mathf.Max(1, int.Parse(rowStr)));
+    }
+
+    public void UpdateZOffset(string zStr)
+    {
+        zOffset = float.Parse(zStr);
+    }
+
     private void StartPlacing(GameObject placeMe)
     {
         ClearObjects();
